@@ -118,10 +118,78 @@ font-size: 35px;
 }
 /* motivational text */
 /* explanation part */
+#explanation_part{
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+}
 #explanation_part .row [class^="col_"]{
 float: left;
 }
+#explanation_part .box{
+  padding: 0 30px;
+}
+#explanation_part .box img{
+  height: 200px;
+  margin-top: 40px;
+}
+#explanation_part .box .border_1{
+  margin: 40px auto 0 auto;
+  width: 100px;
+  height: 2px;
+}
+#explanation_part .box h1{
+  color: #7CBB02;
+  margin-top: 40px;
+
+}
+#explanation_part .box h2{
+  color: #808080;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
 /* explanation part */
+.border_2{
+  width: 98%;
+  height: 2px;
+  margin: 60px 1%;
+}
+/* test part */
+#test_part{
+
+  width: 80%;
+  margin: 0 10%;
+}
+#test_part .row [class^="col_"]{
+ float: left;
+}
+#test_part .box{
+  padding: 0 30px;
+}
+#test_part .box img{
+  width: 75%;
+  margin-top: 40px;
+}
+#test_part .box h1{
+  font-size: 45px;
+  color: #000000;
+  margin-top: 30px;
+}
+#test_part .box h2{
+  color: #808080;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+}
+#test_part .box a{
+
+}
+/* test part */
+
 
 /* MAIN */
 
@@ -131,6 +199,9 @@ float: left;
 
 
 /* UTILITY */
+.inline_block{
+  display: inline-block;
+}
 /* altezze */
 .w_h_100{
   height: 100%;
@@ -143,6 +214,7 @@ float: left;
 .h_100{
   height: 100%;
 }
+
 /* altezze */
 /* BUTTON STYLE */
 [class^="btr_style_"]{
@@ -169,8 +241,8 @@ float: left;
 .bg_green{
   background-color: #7CBB02;
 }
-.bg_{
-  background-color:
+.bg_grey{
+  background-color: #808080;
 }
 /* BACKGROUND COLOR */
 /* COLONNE */
