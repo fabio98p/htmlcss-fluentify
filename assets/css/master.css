@@ -4,15 +4,19 @@
   padding: 0px;
   border: 0px;
 }
+body{
+  font-family: 'Roboto', sans-serif;
+}
 /* body{
   margin: 0px;
 } */
 /* HEADER */
+header{
+  color: white;
+}
 /* NAV */
 nav{
-  color: white;
   text-transform: uppercase;
-  background-color: #0C325A;
 }
 nav .row:first-child{
   height: 80px;
@@ -32,16 +36,17 @@ nav .logo{
 /* comandi link */
 nav .link li{
   line-height: 80px;
-  /* margin-left: 40px; */
+  margin-left: 40px;
 }
 nav .link li:first-child{
-  /* margin-left: 60px; */
+  margin-left: 60px;
 }
 nav .link a{
   color: white;
   text-decoration: none;
 }
 /* comandi link */
+
 /* comandi button */
 nav .button{
   float: right;
@@ -51,8 +56,33 @@ nav li button{
   display: inline-block;
 }
 /* comandi button */
-
 /* NAV */
+/* ADS PART */
+header #ads_part{
+  background-image: url(../img/background.png);
+  background-size: 70%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+#ads_part .row{
+  height: 700px;
+}
+#ads_part .row > .col_100{
+  position: relative;
+}
+#ads_part .box{
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 35%;
+}
+#ads_part .box h1{
+  font-size: 60px;
+}
+#ads_part .box button{
+  margin: 40px 0 0 0;
+}
+/* ADS PART */
 /* HEADER */
 
 /* MAIN */
@@ -90,7 +120,7 @@ nav li button{
   padding: 10px 40px;
 }
 .btr_style_3{
-
+  padding: 20px;
 }
 /* BUTTON STYLE */
 /* BACKGROUND COLOR */
