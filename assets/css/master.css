@@ -185,15 +185,36 @@ float: left;
   font-weight: 500;
   line-height: 40px;
 }
-#test_part .box a{
-
-}
 /* test part */
-
-
 /* MAIN */
 
 /* FOOTER */
+
+footer > div{
+  width: 80%;
+  margin: 0 auto;
+  height: 200px;
+  line-height: 200px;
+}
+footer .row{
+  float: right;
+  margin-right:;
+}
+footer > div > span{
+  font-size: 50px;
+}
+footer > div > div > span{
+  font-size: 20px;
+  color: grey;
+  margin-right: 30px;
+}
+footer > div > div > select{
+  font-size: 20px;
+  color: grey;
+  background-color: lightgrey;
+  border-bottom: 1px solid grey;
+  padding: 5px 20px;
+}
 /* FOOTER */
 
 
@@ -243,6 +264,9 @@ float: left;
 }
 .bg_grey{
   background-color: #808080;
+}
+.bg_lightgrey{
+  background-color: lightgrey;
 }
 /* BACKGROUND COLOR */
 /* COLONNE */
