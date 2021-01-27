@@ -7,3 +7,122 @@
 /* body{
   margin: 0px;
 } */
+/* HEADER */
+/* NAV */
+nav{
+  color: white;
+  text-transform: uppercase;
+  background-color: #0C325A;
+}
+nav .row:first-child{
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+nav li{
+  display: inline-block;
+}
+/* comandi logo */
+nav .logo{
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+/* comandi logo */
+
+/* comandi link */
+nav .link li{
+  line-height: 80px;
+  /* margin-left: 40px; */
+}
+nav .link li:first-child{
+  /* margin-left: 60px; */
+}
+nav .link a{
+  color: white;
+  text-decoration: none;
+}
+/* comandi link */
+/* comandi button */
+nav .button{
+  float: right;
+  line-height: 80px;
+}
+nav li button{
+  display: inline-block;
+}
+/* comandi button */
+
+/* NAV */
+/* HEADER */
+
+/* MAIN */
+
+/* MAIN */
+
+/* FOOTER */
+/* FOOTER */
+
+
+
+/* UTILITY */
+/* altezze */
+.w_h_100{
+  height: 100%;
+  width: 100%;
+}
+.w_h_50{
+  height: 50%;
+  width: 50%;
+}
+/* altezze */
+/* BUTTON STYLE */
+[class^="btr_style_"]{
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.btr_style_1{
+  padding: 10px;
+}
+.btr_style_2{
+  border: 1px solid white;
+  padding: 10px 40px;
+}
+.btr_style_3{
+
+}
+/* BUTTON STYLE */
+/* BACKGROUND COLOR */
+.bg_blue{
+  background-color: #0C325A;
+}
+.bg_green{
+  background-color: #7CBB02;
+}
+.bg_{
+  background-color:
+}
+/* BACKGROUND COLOR */
+/* COLONNE */
+.col_100{
+  width: calc(100%)
+}
+.col_75{
+  width: calc(100% * (3/4));
+}
+.col_66{
+  width: calc(100% * (2/3));
+}
+.col_50{
+  width: calc(100% * (1/2));
+}
+.col_33{
+  width: calc(100% * (1/3));
+}
+.col_25{
+  width: calc(100% * (1/4));
+}
+/* COLONNE */
+
+/* UTILITY */
