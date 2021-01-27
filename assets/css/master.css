@@ -67,6 +67,9 @@ header #ads_part{
 #ads_part .row{
   height: 700px;
 }
+#ads_part .row [class^="col_"]{
+float: left;
+}
 #ads_part .row > .col_100{
   position: relative;
 }
@@ -86,6 +89,39 @@ header #ads_part{
 /* HEADER */
 
 /* MAIN */
+/* motivational text */
+#motivational_text{
+text-align: center;
+}
+#motivational_text .row{
+  background-color: #D3D3D3;
+  height: 150px;
+}
+#motivational_part .row [class^="col_"]{
+float: left;
+}
+#motivational_text .col_100{
+  position: relative;
+}
+#motivational_text .box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#motivational_text h1{
+font-size: 35px;
+}
+#motivational_text h2{
+  margin-top: 10px;
+  color: #808080;
+}
+/* motivational text */
+/* explanation part */
+#explanation_part .row [class^="col_"]{
+float: left;
+}
+/* explanation part */
 
 /* MAIN */
 
@@ -103,6 +139,9 @@ header #ads_part{
 .w_h_50{
   height: 50%;
   width: 50%;
+}
+.h_100{
+  height: 100%;
 }
 /* altezze */
 /* BUTTON STYLE */
