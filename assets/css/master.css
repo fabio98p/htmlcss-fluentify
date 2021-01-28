@@ -7,9 +7,42 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-/* body{
-  margin: 0px;
-} */
+/* LAYOUT */
+/* FLOAT */
+div[class^="col_"]{
+  float: left;
+}
+/* FLOAT */
+/* CLREARFIX */
+.row:after{
+  clear:both;
+  content: "";
+  display: table;
+}
+/* CLREARFIX */
+/* COLONNE */
+.col_100{
+  width: calc(100%);
+}
+.col_75{
+  width: calc(100% * (3/4));
+}
+.col_66{
+  width: calc(100% * (2/3));
+}
+.col_50{
+  width: calc(100% * (1/2));
+}
+.col_33{
+  width: calc(100% * (1/3));
+}
+.col_25{
+  width: calc(100% * (1/4));
+}
+/* COLONNE */
+
+
+/* LAYOUT */
 /* HEADER */
 header{
   color: white;
@@ -57,35 +90,31 @@ nav li button{
 }
 /* comandi button */
 /* NAV */
-/* ADS PART */
-header #ads_part{
+/* JUMBO PART */
+
+header #jumbo_part{
   background-image: url(../img/background.png);
   background-size: 70%;
-  background-position: right bottom;
+  min-width: 1300px;
+  background-position-x: 115%;
+  background-position-y: bottom;
   background-repeat: no-repeat;
 }
-#ads_part .row{
+#jumbo_part .row{
+  width: 80%;
+  margin: 0 auto;
   height: 700px;
 }
-#ads_part .row [class^="col_"]{
-float: left;
+#jumbo_part .col_50{
+margin-top: 150px;
 }
-#ads_part .row > .col_100{
-  position: relative;
+#jumbo_part h1{
+  font-size: 70px;
 }
-#ads_part .box{
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  width: 35%;
-}
-#ads_part .box h1{
-  font-size: 60px;
-}
-#ads_part .box button{
+#jumbo_part button{
   margin: 40px 0 0 0;
 }
-/* ADS PART */
+/* JUMBO PART */
 /* HEADER */
 
 /* MAIN */
@@ -97,9 +126,7 @@ text-align: center;
   background-color: #D3D3D3;
   height: 150px;
 }
-#motivational_part .row [class^="col_"]{
-float: left;
-}
+
 #motivational_text .col_100{
   position: relative;
 }
@@ -123,9 +150,7 @@ font-size: 35px;
   width: 80%;
   margin: 0 10%;
 }
-#explanation_part .row [class^="col_"]{
-float: left;
-}
+
 #explanation_part .box{
   padding: 0 30px;
 }
@@ -151,10 +176,10 @@ float: left;
   line-height: 30px;
 }
 /* explanation part */
-.border_2{
+hr{
+  border: 1px solid lightgrey;
   width: 98%;
-  height: 2px;
-  margin: 60px 1%;
+  margin: 40px auto;
 }
 /* test part */
 #test_part{
@@ -162,15 +187,13 @@ float: left;
   width: 80%;
   margin: 0 10%;
 }
-#test_part .row [class^="col_"]{
- float: left;
-}
+
 #test_part .box{
   padding: 0 30px;
 }
 #test_part .box img{
   width: 75%;
-  margin-top: 40px;
+  margin: 30px 0;
 }
 #test_part .box h1{
   font-size: 45px;
@@ -190,34 +213,43 @@ float: left;
 
 /* FOOTER */
 
-footer > div{
+footer > .container{
   width: 80%;
   margin: 0 auto;
   height: 200px;
   line-height: 200px;
 }
-footer .row{
+footer .box{
   float: right;
-  margin-right:;
+
 }
-footer > div > span{
-  font-size: 50px;
+footer .container p{
+  float: left;
+  font-size: 40px;
+  font-weight: bold;
 }
-footer > div > div > span{
-  font-size: 20px;
+footer .container .box span{
+  font-weight: bold;
+  font-size: 25px;
   color: grey;
   margin-right: 30px;
 }
-footer > div > div > select{
+footer .container .box select{
   font-size: 20px;
   color: grey;
   background-color: lightgrey;
   border-bottom: 1px solid grey;
+  font-size: 30px;
   padding: 5px 20px;
 }
 /* FOOTER */
-
-
+/* HELP */
+#help .btr_help{
+  position: fixed;
+  bottom: 0;
+  right: 13%;
+}
+/* HELP */
 
 /* UTILITY */
 .inline_block{
@@ -252,7 +284,14 @@ footer > div > div > select{
   padding: 10px 40px;
 }
 .btr_style_3{
-  padding: 20px;
+  padding: 25px 15px;
+}
+.btr_help{
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius:  5px;
+  color: white;
+  text-transform: uppercase;
 }
 /* BUTTON STYLE */
 /* BACKGROUND COLOR */
@@ -269,25 +308,4 @@ footer > div > div > select{
   background-color: lightgrey;
 }
 /* BACKGROUND COLOR */
-/* COLONNE */
-.col_100{
-  width: calc(100%)
-}
-.col_75{
-  width: calc(100% * (3/4));
-}
-.col_66{
-  width: calc(100% * (2/3));
-}
-.col_50{
-  width: calc(100% * (1/2));
-}
-.col_33{
-  width: calc(100% * (1/3));
-}
-.col_25{
-  width: calc(100% * (1/4));
-}
-/* COLONNE */
-
 /* UTILITY */
